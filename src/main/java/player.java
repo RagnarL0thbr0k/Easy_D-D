@@ -12,6 +12,13 @@ public class player {
     private int attack;
     private int p,a,m;
 
+    public player(){}
+
+    public player (String nome, int attackType){
+        this.playerName=nome;
+        this.attack=attackType;
+    }
+
     public int getAttack() {
         return attack;
     }
