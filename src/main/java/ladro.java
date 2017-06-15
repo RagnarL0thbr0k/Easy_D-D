@@ -17,6 +17,11 @@ public class ladro extends enemies {
         return damage;
     }
 
+    public void setDamage(int damage){
+        this.damage=damage;
+        life =- damage;
+    }
+
 
     public int setAttack() {
         attack = rand.nextInt(15);
@@ -83,6 +88,5 @@ public class ladro extends enemies {
         ladroDamage = (m * 10)+(s*15);
         return ladroDamage;
     }
-
 
 }

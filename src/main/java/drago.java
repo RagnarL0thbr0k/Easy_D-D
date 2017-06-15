@@ -18,6 +18,11 @@ public class drago extends enemies {
         return damage;
     }
 
+    public void setDamage(int damage){
+        this.damage=damage;
+        life =- damage;
+    }
+
 
     public int setAttack() {
         attack = rand.nextInt(15);

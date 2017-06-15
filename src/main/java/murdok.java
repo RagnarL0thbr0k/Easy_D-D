@@ -16,6 +16,11 @@ public class murdok extends ladro{
         return damage;
     }
 
+    public void setDamage(int damage){
+        this.damage=damage;
+        life =- damage;
+    }
+
 
     public int setAttack() {
         attack = rand.nextInt(15);
