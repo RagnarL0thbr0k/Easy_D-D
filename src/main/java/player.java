@@ -18,6 +18,7 @@ public class player {
 
     public void setDamage(int damage) {
         this.damage = damage;
+        life -= damage;
     }
 
 

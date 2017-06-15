@@ -12,7 +12,7 @@ public abstract class enemies {
         return xp;
     }
 
-    public void setXp(int xp) {
+    public void setXp(String razza) {
         this.xp = xp;
     }
 
