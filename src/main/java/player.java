@@ -12,6 +12,15 @@ public class player {
     private int attack;
     private int p,a,m;
 
+    public int getDamage() {
+        return damage;
+    }
+
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+
     public player(){}
 
     public player (String nome, int attackType){
