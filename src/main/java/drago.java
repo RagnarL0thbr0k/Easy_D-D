@@ -69,6 +69,7 @@ public class drago extends enemies {
         }else {
             isDead();
             dragoDamageTot();
+            System.out.println("Prima di morire il drago è riuscito ad infliggerti: " + dragoDamage);
             System.exit(0);
 
         }

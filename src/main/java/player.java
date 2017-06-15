@@ -8,7 +8,7 @@ public class player {
     private int life = 100;
     private int damage;
     private int playerDamage;
-    private int playerName;
+    private String playerName;
     private int attack;
     private int p,a,m;
 
@@ -37,17 +37,18 @@ public class player {
         }else {
             isDead();
             playerDamageTot();
+            System.out.println("Prima di morire " + getPlayerName() + " è riuscito ad infliggere: " + playerDamage);
             System.exit(0);
         }
 
     }
 
 
-    public int getPlayerName() {
+    public String getPlayerName() {
         return playerName;
     }
 
-    public void setPlayerName(int playerName) {
+    public void setPlayerName(String playerName) {
         this.playerName = playerName;
     }
 
@@ -67,6 +68,7 @@ public class player {
 
     public int playerDamageTot(){
         playerDamage = (p*7)+(a*15)+(m*20);
+        System.out.println(getPlayerName() + " è riuscito ad infliggere: " + playerDamage);
         return playerDamage;
     }
 
